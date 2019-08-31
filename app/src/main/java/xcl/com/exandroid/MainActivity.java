@@ -67,11 +67,12 @@ public class MainActivity extends AppCompatActivity implements MyRecyclerViewAda
                         String name =object1.getString("productDisplayName");
                         String price =object1.getString("listPrice");
                         String place =object1.getString("isMarketPlace");
+                        String url=object1.getString("smImage");
 
                         // Toast.makeText(getApplicationContext(),name,Toast.LENGTH_LONG).show();
 
                         // data to populate the RecyclerView with
-                        clase_zapatos nuevo_zapato=new clase_zapatos(name,price,place);
+                        clase_zapatos nuevo_zapato=new clase_zapatos(name,price,place,url);
 
                         zapatos.add(nuevo_zapato);
 
